@@ -1,0 +1,72 @@
+{
+  "name": "loopback-rest-include-mixin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "standard src test",
+    "check": "npm run lint -s && dependency-check package.json --entry src",
+    "watch": "watch 'npm run build' src test",
+    "pretest": "standard",
+    "test": "mocha --compilers js:babel-register",
+    "prebuild": "npm run check -s && npm run clean -s",
+    "build": "babel --optional runtime src -d dist",
+    "postbuild": "npm run test -s",
+    "coverage": "babel-node node_modules/isparta/bin/isparta cover test/index.js",
+    "coveralls": "npm run coverage -s && coveralls < coverage/lcov.info",
+    "postcoveralls": "rimraf ./coverage",
+    "prepublish": "npm run build -s",
+    "deploy": "git pull --rebase origin master && git push origin master",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "postpublish": "git push origin master --follow-tags",
+    "toc": "doctoc --github --title \"# Changelog\" CHANGELOG.md"
+  },
+  "standard": {
+    "env": [
+      "node",
+      "es6",
+      "mocha"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chopperlee2011/loopback-rest-include-mixin.git"
+  },
+  "keywords": [
+    "node",
+    "loopback",
+    "mixin",
+    "include"
+  ],
+  "author": "chopperlee <lihengpro@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chopperlee2011/loopback-rest-include-mixin/issues"
+  },
+  "homepage": "https://github.com/chopperlee2011/loopback-rest-include-mixin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^4.1.6",
+    "babel-preset-latest": "^6.24.0",
+    "coveralls": "^2.11.4",
+    "dependency-check": "^2.5.1",
+    "doctoc": "^0.15.0",
+    "isparta": "^4.0.0",
+    "loopback": "^3.6.0",
+    "rimraf": "^2.4.2",
+    "standard": "^9.0.2",
+    "supertest": "^3.0.0",
+    "watch": "^0.16.0"
+  },
+  "dependencies": {
+    "deprecate": "^1.0.0"
+  }
+}
