@@ -1,4 +1,4 @@
-<big><h1 align="center">loopback-rest-include-mixin</h1></big>
+# loopback-rest-include-mixin
 
 <p align="center">
   <a href="https://npmjs.org/package/loopback-rest-include-mixin">

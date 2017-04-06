@@ -4,6 +4,3 @@ node_js:
   - v6
   - v5
   - v4
-  - '0.12'
-after_script:
-  - 'npm run coveralls'
