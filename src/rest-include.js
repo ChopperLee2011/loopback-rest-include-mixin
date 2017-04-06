@@ -15,3 +15,5 @@ export default function (Model, options) {
   Model.beforeRemote('find', injectIncludes)
   Model.beforeRemote('findById', injectIncludes)
 }
+
+module.exports = exports.default
