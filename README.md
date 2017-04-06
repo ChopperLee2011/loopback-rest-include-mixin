@@ -6,11 +6,6 @@
          alt="NPM Version">
   </a>
 
-  <a href="https://coveralls.io/r/chopperlee2011/loopback-rest-include-mixin">
-    <img src="https://img.shields.io/coveralls/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square"
-         alt="Coverage Status">
-  </a>
-
   <a href="https://travis-ci.org/chopperlee2011/loopback-rest-include-mixin">
     <img src="https://img.shields.io/travis/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square"
          alt="Build Status">
@@ -27,7 +22,7 @@
   </a>
 
   <a href="https://github.com/chopperlee2011/loopback-rest-include-mixin/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/loopback-rest-include-mixin.svg?style=flat-square"
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg"
          alt="License">
   </a>
 </p>
@@ -43,7 +38,10 @@ This module is designed for changing GET /models and GET /models/id to automatic
 ```sh
 npm i -D loopback-rest-include-mixin
 ```
-
+or use Yarn
+```sh
+yarn install
+```
 ## Usage
 
 ```js
@@ -61,9 +59,6 @@ MIT © [chopperlee](http://github.com/chopperlee2011)
 
 [travis-url]: https://travis-ci.org/chopperlee2011/loopback-rest-include-mixin
 [travis-image]: https://img.shields.io/travis/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square
-
-[coveralls-url]: https://coveralls.io/r/chopperlee2011/loopback-rest-include-mixin
-[coveralls-image]: https://img.shields.io/coveralls/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/chopperlee2011/loopback-rest-include-mixin
 [depstat-image]: https://david-dm.org/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square
