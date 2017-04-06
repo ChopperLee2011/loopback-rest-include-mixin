@@ -6,8 +6,8 @@
          alt="NPM Version">
   </a>
 
-  <a href="https://travis-ci.org/chopperlee2011/loopback-rest-include-mixin">
-    <img src="https://img.shields.io/travis/chopperlee2011/loopback-rest-include-mixin.svg?style=flat-square"
+  <a href="https://travis-ci.org/ChopperLee2011/loopback-rest-include-mixin">
+    <img src="https://img.shields.io/travis/ChopperLee2011/loopback-rest-include-mixin.svg?style=flat-square"
          alt="Build Status">
   </a>
 
@@ -38,10 +38,7 @@ This module is designed for changing GET /models and GET /models/id to automatic
 ```sh
 npm i -D loopback-rest-include-mixin
 ```
-or use Yarn
-```sh
-yarn install
-```
+
 ## Usage
 
 ```js
